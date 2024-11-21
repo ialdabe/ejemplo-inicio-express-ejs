@@ -7,7 +7,7 @@ var app = express();
 app.use(express.static(path.join(__dirname,'public')));
 
 // Middleware para el parseo de req.body
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 // use templates
