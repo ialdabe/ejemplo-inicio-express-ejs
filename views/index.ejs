@@ -1,0 +1,9 @@
+<%- include ('partials/header.ejs') %>
+    <h1><%=titulo%></h1>
+<ul>
+    <%clientes.forEach(function(cliente) {%>
+    <li> <%=cliente.nombre %>
+    <%=cliente.apellido%></li>
+    <% }) %>
+</ul>
+<%- include ('partials/footer.ejs') %>
